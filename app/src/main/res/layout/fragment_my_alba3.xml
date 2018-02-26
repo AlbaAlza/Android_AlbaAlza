@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    tools:context="com.example.albaalza.P_MyAlba.AddAlba">
+<ImageView
+    android:src="@drawable/myalba_topbar"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" />
+
+
+
+    <LinearLayout
+        android:layout_marginTop="90dp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <!--근무지 이름-->
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:layout_marginTop="10dp"
+                android:background="@null"
+                android:id="@+id/edit_albaname"
+                android:textSize="13sp"
+                android:hint="근무지 이름"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <View
+                android:layout_marginTop="20dp"
+                android:background="@color/edit"
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"></View>
+        </LinearLayout>
+
+        <!--나의 시급-->
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:layout_marginTop="10dp"
+                android:background="@null"
+                android:id="@+id/edit_my_pay"
+                android:textSize="13sp"
+                android:hint="나의 시급"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <View
+                android:layout_marginTop="20dp"
+                android:background="@color/edit"
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"></View>
+        </LinearLayout>
+
+
+        <!--급여 날짜-->
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:layout_marginTop="10dp"
+                android:background="@null"
+                android:id="@+id/edit_payday"
+                android:textSize="13sp"
+                android:hint="급여 날짜"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <View
+                android:layout_marginTop="20dp"
+                android:background="@color/edit"
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"></View>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="15dp">
+
+            <Button
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/btn_edit"
+                android:text="알바수정"
+                />
+
+            <Button
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/btn_delete"
+                android:text="알바삭제"
+                />
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+
+
+
+
+
+</RelativeLayout>
